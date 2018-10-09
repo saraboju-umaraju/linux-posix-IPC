@@ -1,0 +1,135 @@
+Reading 8192:-
+   PID TTY      STAT   TIME COMMAND
+    1 ?        Ss     0:01 /sbin/init
+    2 ?        S      0:00 [kthreadd]
+    3 ?        S      0:01 [ksoftirqd/0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    7 ?        S      1:45 [rcu_sched]
+    8 ?        S      0:00 [rcu_bh]
+    9 ?        S      0:00 [migration/0]
+   10 ?        S      0:01 [watchdog/0]
+   11 ?        S      0:01 [watchdog/1]
+   12 ?        S      0:00 [migration/1]
+   13 ?        S      0:01 [ksoftirqd/1]
+   15 ?        S<     0:00 [kworker/1:0H]
+   16 ?        S      0:01 [watchdog/2]
+   17 ?        S      0:00 [migration/2]
+   18 ?        S      0:00 [ksoftirqd/2]
+   20 ?        S<     0:00 [kworker/2:0H]
+   21 ?        S      0:00 [watchdog/3]
+   22 ?        S      0:00 [migration/3]
+   23 ?        S      0:00 [ksoftirqd/3]
+   25 ?        S<     0:00 [kworker/3:0H]
+   26 ?        S      0:00 [kdevtmpfs]
+   27 ?        S<     0:00 [netns]
+   28 ?        S<     0:00 [perf]
+   29 ?        S      0:00 [khungtaskd]
+   30 ?        S<     0:00 [writeback]
+   31 ?        SN     0:00 [ksmd]
+   32 ?        S<     0:00 [crypto]
+   33 ?        S<     0:00 [kintegrityd]
+   34 ?        S<     0:00 [bioset]
+   35 ?        S<     0:00 [kblockd]
+   36 ?        S<     0:00 [ata_sff]
+   41 ?        S      0:02 [kswapd0]
+   42 ?        S<     0:00 [vmstat]
+   43 ?        S      0:00 [fsnotify_mark]
+   70 ?        S<     0:00 [kthrotld]
+   71 ?        S<     0:00 [acpi_thermal_pm]
+   72 ?        S      0:00 [scsi_eh_0]
+   73 ?        S<     0:00 [scsi_tmf_0]
+   74 ?        S      0:00 [scsi_eh_1]
+   75 ?        S<     0:00 [scsi_tmf_1]
+   76 ?        S      0:00 [scsi_eh_2]
+   77 ?        S<     0:00 [scsi_tmf_2]
+   78 ?        S      0:00 [scsi_eh_3]
+   79 ?        S<     0:00 [scsi_tmf_3]
+   85 ?        S<     0:00 [kpsmoused]
+  102 ?        S<     0:00 [deferwq]
+  103 ?        S<     0:00 [bioset]
+  160 ?        S<     0:00 [kworker/2:1H]
+  162 ?        S      0:01 [jbd2/sda1-8]
+  163 ?        S<     0:00 [ext4-rsv-conver]
+  284 ?        S      0:00 upstart-udev-bridge --daemon
+  291 ?        Ss     0:00 /lib/systemd/systemd-udevd --daemon
+  341 ?        S<     0:01 [kworker/3:1H]
+  342 ?        S<     0:00 [kworker/0:1H]
+  343 ?        S<     0:00 [kworker/1:1H]
+  418 ?        S      0:00 upstart-socket-bridge --daemon
+  580 ?        S      0:04 [jbd2/sda6-8]
+  581 ?        S<     0:00 [ext4-rsv-conver]
+  663 ?        S      0:00 upstart-file-bridge --daemon
+  704 tty4     Ss+    0:00 /sbin/getty -8 38400 tty4
+  708 tty5     Ss+    0:00 /sbin/getty -8 38400 tty5
+  713 ?        Ssl    0:07 rsyslogd
+  717 tty2     Ss+    0:00 /sbin/getty -8 38400 tty2
+  718 tty3     Ss+    0:00 /sbin/getty -8 38400 tty3
+  721 tty6     Ss+    0:00 /sbin/getty -8 38400 tty6
+  754 ?        Ss     0:00 /usr/sbin/cups-browsed
+  757 ?        Ss     0:08 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+  766 ?        Ss     0:00 /usr/sbin/sshd -D
+  800 ?        Ss     0:22 /usr/sbin/irqbalance
+  809 ?        Ss     0:00 cron
+  811 ?        Ss     0:05 /usr/sbin/kerneloops
+  819 ?        Ss     0:09 dbus-daemon --system --fork
+  861 ?        Ssl    0:00 /usr/sbin/ModemManager
+  905 ?        Ss     0:00 /lib/systemd/systemd-logind
+  916 ?        S      1:13 avahi-daemon: running [umaraju.local]
+  918 ?        S      0:00 avahi-daemon: chroot helper
+ 1110 ?        Ssl    0:00 whoopsie
+ 1117 tty1     Ss+    0:00 /sbin/getty -8 38400 tty1
+ 1127 ?        Ssl    0:05 NetworkManager
+ 1133 ?        Sl     0:06 /usr/lib/policykit-1/polkitd --no-debug
+ 1142 ?        SLsl   0:05 lightdm
+ 1157 tty7     Ssl+  77:28 /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+ 1160 ?        Sl     0:17 /usr/lib/accountsservice/accounts-daemon
+ 1188 ?        S      0:00 [kauditd]
+ 1238 ?        Sl     0:00 lightdm --session-child 12 19
+ 1259 ?        S      0:01 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+ 1308 ?        Sl     0:00 /usr/lib/upower/upowerd
+ 1320 ?        SNl    0:02 /usr/lib/rtkit/rtkit-daemon
+ 1460 ?        Sl     0:00 /usr/lib/colord/colord
+ 1655 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 1657 ?        Ss     0:00 init --user
+ 1680 ?        Sl     0:08 /opt/google/chrome/chrome --type=renderer --lang=en-US --force-fieldtrials=Prerender/PrerenderEnabled/UMA-New-Install-Uniformity-Trial/Control/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_09/UMA-Uniformity-Trial-1-Percent/group_41/UMA-Uniformity-Trial-10-Percent/group_09/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_02/UMA-Uniformity-Trial-50-Percent/group_01/ --renderer-print-preview --enable-deadline-scheduling --disable-accelerated-compositing --disable-accelerated-video-decode --disable-webrtc-hw-encoding --channel=16236.96.616226324
+ 1741 ?        Ss     0:11 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-qKc46IoGnu
+ 1752 ?        Ss     0:00 upstart-event-bridge
+ 1762 ?        Ss     0:00 /usr/lib/i386-linux-gnu/hud/window-stack-bridge
+ 1770 ?        Ssl    3:04 /usr/bin/ibus-daemon --daemonize --xim
+ 1800 ?        S      0:03 upstart-dbus-bridge --daemon --session --user --bus-name session
+ 1808 ?        S      0:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+ 1809 ?        S      0:00 upstart-file-bridge --daemon --user
+ 1812 ?        Ssl    0:17 /usr/lib/unity-settings-daemon/unity-settings-daemon
+ 1816 ?        Ssl    0:05 /usr/lib/i386-linux-gnu/hud/hud-service
+ 1820 ?        Sl     0:01 /usr/lib/gvfs/gvfsd
+ 1824 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1829 ?        Sl     0:00 /usr/lib/ibus/ibus-dconf
+ 1835 ?        Sl     0:30 /usr/lib/ibus/ibus-ui-gtk3
+ 1836 ?        Ssl    0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+ 1837 ?        Ssl    0:00 gnome-session --session=ubuntu
+ 1842 ?        S      0:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+ 1845 ?        Sl     0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+ 1850 ?        Sl     0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 1868 ?        Ssl    0:26 /usr/lib/unity/unity-panel-service
+ 1880 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+ 1886 ?        Sl     0:17 /usr/lib/i386-linux-gnu/bamf/bamfdaemon
+ 1892 ?        Sl     0:56 /usr/lib/ibus/ibus-engine-simple
+ 1909 ?        S<l    1:36 /usr/bin/pulseaudio --start --log-target=syslog
+ 1922 ?        Sl     0:00 /usr/lib/i386-linux-gnu/indicator-keyboard-service --use-gtk
+ 1926 ?        Ssl    0:04 /usr/lib/i386-linux-gnu/indicator-messages/indicator-messages-service
+ 1928 ?        Ssl    0:00 /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+ 1932 ?        Ssl    0:00 /usr/lib/i386-linux-gnu/indicator-power/indicator-power-service
+ 1934 ?        Ssl    0:06 /usr/lib/i386-linux-gnu/indicator-datetime/indicator-datetime-service
+ 1938 ?        Ssl    0:19 /usr/lib/i386-linux-gnu/indicator-sound/indicator-sound-service
+ 1939 ?        Ssl    0:00 /usr/lib/i386-linux-gnu/indicator-printers/indicator-printers-service
+ 1948 ?        Ssl    0:06 /usr/lib/i386-linux-gnu/indicator-session/indicator-session-service
+ 1953 ?        Ssl    0:00 /usr/lib/i386-linux-gnu/indicator-application/indicator-application-service
+ 1966 ?        Sl     0:00 /usr/lib/evolution/evolution-source-registry
+ 1985 ?        Sl     0:00 /usr/lib/i386-linux-gnu/notify-osd
+ 2004 ?        Sl   187:17 compiz
+ 2012 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory
+ 2013 ?        Sl     0:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 2015 ?        Sl     0:26 nautilus -n
+ 2018 ?        Sl     0:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+ 2019 ?        Sl     0:00 nm-applet
+ 2030 ?

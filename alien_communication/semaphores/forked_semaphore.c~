@@ -1,0 +1,42 @@
+#include	<stdio.h>
+
+#include	<unistd.h>
+
+#include	<semaphore.h>
+
+sem_t sem ;
+
+int main ( void ) 
+{
+		sem_init ( &sem , 1 , 1 ) ;
+
+		if ( fork () ) {
+
+				while (1) {
+
+				sem_wait ( &sem ) ;
+				
+				printf("other\n");
+
+				sem_post ( &sem ) ;
+
+			}
+		}
+
+		else {
+
+				while (1) {
+
+				sem_wait ( &sem ) ;
+
+				sleep(1) ;
+
+				printf("anther\n");
+	
+				sem_post ( &sem ) ;
+}
+		}
+
+		return 0 ;
+
+}
